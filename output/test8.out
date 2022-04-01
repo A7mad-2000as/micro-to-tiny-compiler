@@ -1,0 +1,61 @@
+var a
+var b
+var k
+var g
+var p
+var u
+str newline "\n"
+label main
+move 10.2 a
+move 11.4 b
+label L1
+move 80 r1
+cmpr a r1
+jgt L2
+move 1 r2
+cmpr b r2
+jne L3
+move 1 r3
+mulr a r3
+move r3 g
+sys writer g
+sys writes newline
+label L3
+move 2 r4
+cmpr b r4
+jne L4
+move 2 r5
+mulr a r5
+move r5 p
+sys writer p
+sys writes newline
+label L4
+move 3 r6
+cmpr b r6
+jne L5
+move 3 r7
+mulr a r7
+move r7 k
+sys writer k
+sys writes newline
+jmp L6
+label L5
+move 4 r8
+mulr a r8
+move r8 u
+sys writer u
+sys writes newline
+label L6
+move b r9
+addr 1 r9
+move r9 b
+move a r10
+addr 20 r10
+move r10 a
+jmp L1
+label L2
+sys writer a
+sys writes newline
+sys writer b
+sys writes newline
+

@@ -1,0 +1,77 @@
+var a
+var b
+var c
+var d
+str newline "\n"
+label main
+move 1 a
+move 2 b
+move 10 c
+move 20 d
+sys writei a
+sys writes newline
+sys writei b
+sys writes newline
+sys writei c
+sys writes newline
+sys writei d
+sys writes newline
+move a r1
+addi b r1
+move r1 a
+sys writei a
+sys writes newline
+move a r2
+muli c r2
+move r2 b
+sys writei b
+sys writes newline
+move 0 r3
+subi a r3
+move r3 r4
+addi b r4
+move r4 c
+sys writei c
+sys writes newline
+move 0 r5
+subi d r5
+move r5 d
+sys writei d
+sys writes newline
+move a r6
+addi b r6
+move d r7
+addi c r7
+move r6 r8
+muli r7 r8
+move a r9
+addi b r9
+move r9 r10
+addi c r10
+move r10 r11
+addi d r11
+move r11 r12
+divi a r12
+move r8 r13
+subi r12 r13
+move r13 a
+sys writei a
+sys writes newline
+move a r14
+addi 10 r14
+move r14 a
+sys writei a
+sys writes newline
+move b r15
+addi a r15
+move r15 r16
+addi 10 r16
+move r16 b
+sys writei b
+sys writes newline
+move 0 r17
+subi 10 r17
+move r17 c
+sys writei c
+sys writes newline
+

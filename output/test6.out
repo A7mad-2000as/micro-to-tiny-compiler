@@ -1,0 +1,51 @@
+var count1
+var count2
+var result
+var j
+var k
+str newline "\n"
+label main
+move 7 count1
+move 9 count2
+move 0 result
+move 1 j
+label L1
+move count1 r1
+cmpi j r1
+jge L2
+move 1 k
+label L3
+move count2 r2
+cmpi k r2
+jge L4
+move j r3
+cmpi k r3
+jle L5
+move j r4
+muli k r4
+move result r5
+addi r4 r5
+move r5 result
+label L5
+move j r6
+cmpi k r6
+jne L6
+move j r7
+muli k r7
+move result r8
+subi r7 r8
+move r8 result
+label L6
+move k r9
+addi 1 r9
+move r9 k
+jmp L3
+label L4
+move j r10
+addi 1 r10
+move r10 j
+jmp L1
+label L2
+sys writei result
+sys writes newline
+

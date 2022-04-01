@@ -1,0 +1,29 @@
+var a
+var b
+var c
+var d
+var e
+str msg1 "enter integer1"
+str msg2 "enter integer2"
+str msg3 "result is "
+str newline "\n"
+label main
+move 1 a
+move 2 b
+sys writes msg1
+sys writes newline
+sys readi c
+sys writes msg2
+sys writes newline
+sys readi d
+move a r1
+muli c r1
+move b r2
+muli d r2
+move r1 r3
+addi r2 r3
+move r3 e
+sys writes msg3
+sys writei e
+sys writes newline
+

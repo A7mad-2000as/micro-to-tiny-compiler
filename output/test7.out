@@ -1,0 +1,39 @@
+var a
+var b
+var i
+var p
+str msg "enter a new integer"
+str newline "\n"
+label main
+move 0 a
+move 0 b
+move 0 i
+label L1
+move 10 r1
+cmpi i r1
+jeq L2
+sys writes msg
+sys writes newline
+sys readi p
+move 10 r2
+cmpi p r2
+jle L3
+move a r3
+addi 1 r3
+move r3 a
+jmp L4
+label L3
+move b r4
+addi 1 r4
+move r4 b
+label L4
+move i r5
+addi 1 r5
+move r5 i
+jmp L1
+label L2
+sys writei a
+sys writes newline
+sys writei b
+sys writes newline
+

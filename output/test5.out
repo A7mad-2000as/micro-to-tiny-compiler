@@ -1,0 +1,26 @@
+var a
+var d
+str msg1 "enter an integer"
+str msg2 "factorial is "
+str newline "\n"
+label main
+sys writes msg1
+sys writes newline
+sys readi a
+move 1 d
+label L1
+move 1 r1
+cmpi a r1
+jle L2
+move d r2
+muli a r2
+move r2 d
+move a r3
+subi 1 r3
+move r3 a
+jmp L1
+label L2
+sys writes msg2
+sys writei d
+sys writes newline
+
